@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="pt-PT" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RRS, Pingo Doce · Rafael Vaz</title>
+  <meta name="description" content="Case study: como simplifiquei o processo de adição e remoção de artigos do quiosque Pingo Doce.">
+  <meta property="og:title" content="RRS, Pingo Doce · Rafael Vaz">
+  <meta property="og:type" content="article">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../">Rafael Vaz <span>· Portfolio</span></a>
+      <nav aria-label="Principal">
+        <ul class="nav">
+          <li><a href="../#projetos" aria-current="page">Projetos</a></li>
+          <li><a href="../#sobre">Sobre</a></li>
+          <li><a href="../#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Título, ficha e resumo -->
+    <section class="cs-hero">
+      <div class="wrap">
+        <a class="back" href="../#projetos">&#8592; Todos os projetos</a>
+        <div class="kicker">Quiosque de self-checkout · Pingo Doce</div>
+        <h1>Como simplifiquei o processo de adição e remoção de artigos do quiosque Pingo Doce.</h1>
+
+        <dl class="facts">
+          <div><dt>Cliente</dt><dd>Fujitsu, para o Pingo Doce</dd></div>
+          <div><dt>Modelo</dt><dd>Pacote de horas via Monday</dd></div>
+          <div><dt>Dispositivos</dt><dd>RRS, quiosques Pingo Doce</dd></div>
+          <div><dt>O meu papel</dt><dd>UX/UI Designer</dd></div>
+        </dl>
+
+        <div class="summary">
+          <div>
+            <h3>Desafio</h3>
+            <p>Corrigir um artigo mal lido obrigava o supervisor a usar o POS numa janela pequena e difícil de operar.</p>
+          </div>
+          <div>
+            <h3>Abordagem</h3>
+            <p>Uma opção dedicada para editar tabuleiros, desenhada dentro das limitações técnicas do RRS.</p>
+          </div>
+          <div>
+            <h3>Resultado</h3>
+            <p>Fluxos de remoção e adição de artigos no menu do supervisor, com o motivo de remoção sempre registado.</p>
+          </div>
+        </div>
+
+        <ol class="toc" aria-label="Nesta página">
+          <li><a href="#contexto"><span>01</span>Contexto</a></li>
+          <li><a href="#problema"><span>02</span>Problema</a></li>
+          <li><a href="#limitacoes"><span>03</span>Limitações técnicas</a></li>
+          <li><a href="#solucao"><span>04</span>Solução</a></li>
+          <li><a href="#resultado"><span>05</span>Resultado</a></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 01 -->
+    <section class="step" id="contexto">
+      <div class="wrap">
+        <div class="read reveal">
+          <div class="kicker">01 · Contexto</div>
+          <h2>Um pacote de horas, muitos pedidos pequenos</h2>
+          <p>A Fujitsu contrata um pacote de horas à Monday para responder a pedidos sobre as máquinas do Pingo Doce: alterações de fluxo, novos requisitos legais, novos métodos de pagamento.</p>
+          <p>Cada pedido chega com o seu próprio briefing, com as respetivas limitações técnicas e exigências do cliente.</p>
+        </div>
+
+        <figure class="figure reveal">
+          <div class="frame device"><img src="../assets/img/pingo-doce/rrs-quiosque.png" alt="Quiosque RRS da Comida Fresca Pingo Doce, com ecrã, câmara e terminal de pagamento" loading="lazy"></div>
+          <figcaption>O RRS, quiosque de self-checkout da Comida Fresca.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 02 -->
+    <section class="step" id="problema">
+      <div class="wrap">
+        <div class="read reveal">
+          <div class="kicker">02 · Problema</div>
+          <h2>Um POS pequeno demais para corrigir um erro</h2>
+          <p>No RRS, quando há um problema numa transação, o operador passa o cartão de supervisor e entra em Modo Direto, que abre o POS, o sistema de faturação.</p>
+          <p>A janela é pequena, e os operadores queixavam-se de que corrigir ou remover um artigo ali era difícil.</p>
+          <div class="note">
+            <div class="label">O que é o RRS</div>
+            <p>Um quiosque que lê o tabuleiro por câmara e sensores, sem que o cliente tenha de registar qualquer artigo.</p>
+          </div>
+        </div>
+
+        <figure class="figure reveal">
+          <div class="frame device"><img src="../assets/img/pingo-doce/problema-pos.png" alt="Ecrã do RRS em Modo Direto, com a janela do POS no canto superior" loading="lazy"></div>
+          <figcaption>Modo Direto: a janela do POS ocupa só uma pequena parte do ecrã.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 03 -->
+    <section class="step" id="limitacoes">
+      <div class="wrap">
+        <div class="read reveal">
+          <div class="kicker">03 · Limitações técnicas</div>
+          <h2>Uma máquina com recursos limitados</h2>
+          <p>Para ser rápido e focado no reconhecimento de artigos, sem que o cliente tenha de passar por quase nenhum processo, o RRS foi desenvolvido com algumas limitações técnicas: não suporta imagens nem grandes processamentos.</p>
+          <p>Com estas limitações, muitas soluções visuais, como menus com ícones e imagens dos produtos, ficam descartadas desde o início.</p>
+          <div class="note">
+            <div class="label">Observação</div>
+            <p>Pouco me valia criar um ecrã bonito e cheio de funcionalidades que o RRS não conseguia comportar.</p>
+          </div>
+        </div>
+
+        <figure class="figure reveal">
+          <div class="frame device"><img src="../assets/img/pingo-doce/limitacoes-alterar-artigo.png" alt="Exploração de um ecrã para alterar artigo, com imagens de produto" loading="lazy"></div>
+          <figcaption>Exploração com imagens de produto, o tipo de solução que as limitações do RRS não permitem.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 04 -->
+    <section class="step" id="solucao">
+      <div class="wrap">
+        <div class="read reveal">
+          <div class="kicker">04 · Solução</div>
+          <h2>Uma opção dedicada para editar tabuleiros</h2>
+          <p>Ao passar o cartão de supervisor, o RRS ganha uma opção dedicada para editar tabuleiros. Neste ecrã é possível:</p>
+          <ul class="list">
+            <li><b>Remover artigos</b> individualmente, indicando sempre o motivo da remoção.</li>
+            <li><b>Adicionar artigos</b> em volume, vários de uma só vez.</li>
+          </ul>
+          <div class="note">
+            <div class="label">Exigência do cliente</div>
+            <p>Deve ser sempre indicado o motivo da remoção de um artigo.</p>
+          </div>
+        </div>
+
+        <figure class="figure reveal">
+          <div class="frame device"><img src="../assets/img/pingo-doce/solucao-motivo-remocao.png" alt="Modal de remoção de artigo com três motivos para escolher" loading="lazy"></div>
+          <figcaption>Modal de remoção: erro no reconhecimento, artigo duplicado por engano ou cliente desistiu do artigo.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 05 -->
+    <section class="step" id="resultado">
+      <div class="wrap">
+        <div class="read reveal">
+          <div class="kicker">05 · Resultado</div>
+          <h2>Remoção e adição de artigos</h2>
+          <p>Editar tabuleiros passou a fazer parte do menu do supervisor, ao lado de Apagar transação.</p>
+          <p>Estes fluxos resolvem um problema real dentro das limitações técnicas e respeitam as exigências do negócio, facilitando a experiência do supervisor.</p>
+        </div>
+
+        <div class="flow-title reveal">1 · Remoção de artigo</div>
+        <div class="gallery cols-3 flows reveal">
+          <figure><div class="frame"><img src="../assets/img/pingo-doce/remocao-1.png" alt="Menu do supervisor com a opção Editar tabuleiros" loading="lazy"></div><figcaption><b>1.</b>Ecrã de acesso ao supervisor, depois de passar o cartão.</figcaption></figure>
+          <figure><div class="frame"><img src="../assets/img/pingo-doce/remocao-2.png" alt="Lista de artigos agrupados por tabuleiro, com a opção remover em cada um" loading="lazy"></div><figcaption><b>2.</b>Lista por tabuleiro, mantendo a lógica do cesto.</figcaption></figure>
+          <figure><div class="frame"><img src="../assets/img/pingo-doce/remocao-3.png" alt="Modal com os motivos de remoção de artigo" loading="lazy"></div><figcaption><b>3.</b>Modal com os motivos de remoção.</figcaption></figure>
+        </div>
+
+        <div class="flow-title reveal">2 · Adição de artigo</div>
+        <div class="gallery cols-3 flows reveal">
+          <figure><div class="frame"><img src="../assets/img/pingo-doce/adicao-1.png" alt="Lista por tabuleiro com o botão Adicionar artigo" loading="lazy"></div><figcaption><b>1.</b>Lista por tabuleiro, mantendo a lógica do cesto.</figcaption></figure>
+          <figure><div class="frame"><img src="../assets/img/pingo-doce/adicao-2.png" alt="Lista de artigos por categoria, sem imagens" loading="lazy"></div><figcaption><b>2.</b>Lista de artigos, organizada por categoria.</figcaption></figure>
+          <figure><div class="frame"><img src="../assets/img/pingo-doce/adicao-3.png" alt="Lista de artigos com dois artigos selecionados" loading="lazy"></div><figcaption><b>3.</b>Seleção múltipla de artigos.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="next">
+      <div class="wrap">
+        <a href="design-system-fpf.html">
+          <div>
+            <div class="kicker">Próximo projeto</div>
+            <h2>Design System, FPF</h2>
+          </div>
+          <span class="arrow" aria-hidden="true">&#8594;</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© <span id="year">2026</span> Rafael Vaz</span>
+      <a href="../">Voltar ao início</a>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

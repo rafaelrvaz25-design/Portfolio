@@ -6,18 +6,19 @@ Site estático (HTML + CSS puro), publicado com GitHub Pages.
 
 ```
 index.html                     Home: hero, projetos, sobre mim, contacto
-projetos/design-system-fpf.html  Case study 01
+projetos/design-system-fpf.html  Case study 01, FPF
+projetos/rrs-pingo-doce.html     Case study 02, Pingo Doce
 assets/css/style.css           Todos os estilos (tokens no topo, em :root)
 assets/js/main.js              Header ao fazer scroll + animação de entrada
-assets/img/                    Imagens (shield.svg, screenshots em fpf/)
+assets/img/fpf, pingo-doce     Imagens de cada projeto
 ```
 
 ## Editar
 
 - **Texto:** abrir o `.html` e editar diretamente.
 - **Cores e medidas:** variáveis em `:root`, no topo de `style.css`.
-- **Screenshots do case study:** guardar em `assets/img/fpf/` e descomentar os blocos `<figure class="shot">` marcados com `SCREENSHOT REAL` em `projetos/design-system-fpf.html`.
-- **Novo projeto:** copiar `projetos/design-system-fpf.html`, trocar o conteúdo e acrescentar uma linha `<li>` na lista `.projects` do `index.html`.
+- **Imagens:** as atuais foram recortadas dos slides. Para mais nitidez, exportar do Figma a 2x com o mesmo nome de ficheiro e substituir.
+- **Novo projeto:** copiar uma página de `projetos/`, manter a ordem Ficha → Resumo → Secções numeradas → Resultado, e acrescentar um `<li>` na lista `.projects` do `index.html`.
 
 ## Ver localmente
 

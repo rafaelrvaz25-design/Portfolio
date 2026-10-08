@@ -3,14 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Design System FPF · Rafael Vaz</title>
-  <meta name="description" content="Case study: como desenhámos o Design System da Federação Portuguesa de Futebol, do porquê ao resultado.">
-  <meta property="og:title" content="Design System FPF · Rafael Vaz">
+  <title>Design System, FPF · Rafael Vaz</title>
+  <meta name="description" content="Case study: como um Design System contribuiu para a unificação de um ecossistema com mais de 40 produtos digitais da Federação Portuguesa de Futebol.">
+  <meta property="og:title" content="Design System, FPF · Rafael Vaz">
   <meta property="og:type" content="article">
-  <link rel="icon" href="../assets/img/shield.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Barlow+Condensed:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
@@ -18,11 +17,11 @@
 
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="../"><img src="../assets/img/shield.svg" alt="">Rafael Vaz <span>· Portfolio</span></a>
+      <a class="brand" href="../">Rafael Vaz <span>· Portfolio</span></a>
       <nav aria-label="Principal">
         <ul class="nav">
           <li><a href="../#projetos" aria-current="page">Projetos</a></li>
-          <li class="hide-sm"><a href="../#sobre">Sobre</a></li>
+          <li><a href="../#sobre">Sobre</a></li>
           <li><a href="../#contacto">Contacto</a></li>
         </ul>
       </nav>
@@ -30,218 +29,192 @@
   </header>
 
   <main id="main">
-    <!-- capa -->
+    <!-- Título, ficha e resumo -->
     <section class="cs-hero">
       <div class="wrap">
         <a class="back" href="../#projetos">&#8592; Todos os projetos</a>
-        <img class="hero-shield" src="../assets/img/shield.svg" alt="">
-        <span class="tag">Design System</span>
-        <h1>Construir um sistema, não um projeto</h1>
-        <p class="lede" style="margin-top:24px;">Como desenhámos o Design System da Federação Portuguesa de Futebol, do porquê ao resultado.</p>
+        <div class="kicker">Design System · FPF</div>
+        <h1>Como um Design System contribuiu para a unificação de um ecossistema com mais de 40 produtos digitais.</h1>
+
         <dl class="facts">
-          <div><dt>Cliente</dt><dd>Federação Portuguesa de Futebol</dd></div>
+          <div><dt>Cliente</dt><dd>Federação Portuguesa de Futebol (FPF)</dd></div>
           <div><dt>Equipa</dt><dd>2 designers, 1 lead, 1 PM</dd></div>
-          <div><dt>Duração</dt><dd>Dez 2023 a mai 2024 (6 meses)</dd></div>
+          <div><dt>Duração</dt><dd>Dezembro de 2023 a maio de 2024 (6 meses)</dd></div>
           <div><dt>O meu papel</dt><dd>UX/UI Designer</dd></div>
         </dl>
+
+        <div class="summary">
+          <div>
+            <h3>Desafio</h3>
+            <p>Mais de 40 produtos digitais construídos de forma independente, sem uma linguagem visual comum.</p>
+          </div>
+          <div>
+            <h3>Abordagem</h3>
+            <p>Começar por 4 produtos, inventariar o que já existia e reunir biblioteca e documentação num só ficheiro Figma.</p>
+          </div>
+          <div>
+            <h3>Resultado</h3>
+            <p>Adoção completa em 2 produtos, cerca de 8 backoffices fora do scope e 100% nos novos projetos.</p>
+          </div>
+        </div>
+
+        <ol class="toc" aria-label="Nesta página">
+          <li><a href="#contexto"><span>01</span>Contexto</a></li>
+          <li><a href="#scope"><span>02</span>Equipa e scope</a></li>
+          <li><a href="#pesquisa"><span>03</span>Pesquisa</a></li>
+          <li><a href="#organizacao"><span>04</span>Organização</a></li>
+          <li><a href="#componente"><span>05</span>O componente</a></li>
+          <li><a href="#resultado"><span>06</span>Resultado</a></li>
+        </ol>
       </div>
     </section>
 
-    <!-- 01 contexto -->
-    <section class="section">
-      <div class="wrap cs-step reveal">
-        <div class="step-label"><div class="step-num">01</div><div class="step-name">Contexto</div></div>
-        <div>
-          <h2>Era mesmo preciso um Design System?</h2>
-          <p class="body">Um DS não é um projeto, é um produto em constante evolução que exige manutenção contínua. Por isso começámos pela pergunta e não pela solução: mapeámos os mais de 40 produtos digitais já existentes e entrevistámos vários departamentos para perceber as dores e as necessidades reais.</p>
+    <!-- 01 -->
+    <section class="step" id="contexto">
+      <div class="wrap">
+        <div class="read reveal">
+          <div class="kicker">01 · Contexto</div>
+          <h2>É mesmo preciso um Design System?</h2>
+          <p>Um Design System não é apenas um projeto: é um produto em constante evolução, que exige manutenção contínua. Por isso começámos por perguntar se era realmente preciso.</p>
+          <p>Para responder, identificámos os mais de 40 produtos digitais já existentes e entrevistámos vários departamentos para perceber as dores e as necessidades reais.</p>
           <div class="stats">
             <div class="stat"><div class="n">40+</div><div class="l">produtos digitais mapeados na fase de descoberta</div></div>
           </div>
-          <div class="callout">
-            <div class="c-title">Conclusão</div>
-            <p>A resposta foi sim: havia inconsistência visual e retrabalho suficientes para justificar o investimento.</p>
+          <div class="note">
+            <div class="label">Resposta</div>
+            <p>Sim. Havia inconsistência visual e retrabalho suficientes para justificar o investimento.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 02 scope -->
-    <section class="section">
-      <div class="wrap cs-step reveal">
-        <div class="step-label"><div class="step-num">02</div><div class="step-name">Equipa e scope</div></div>
-        <div>
-          <h2>Começar pequeno, para começar bem</h2>
-          <p class="body">Seria impossível acertar os 40+ produtos de uma só vez, por isso limitámo-nos a 4 produtos que davam a cara à federação. O resto ficaria para fases seguintes, integrado um produto de cada vez.</p>
-          <ul class="list">
-            <li>Sites institucionais</li>
-            <li>Bilheteira</li>
-            <li>Loja</li>
-          </ul>
+    <!-- 02 -->
+    <section class="step" id="scope">
+      <div class="wrap">
+        <div class="read reveal">
+          <div class="kicker">02 · Equipa e scope</div>
+          <h2>Arrumar para depois construir</h2>
+          <p>Seria impossível acertar em mais de 40 produtos de uma só vez. Por isso limitámo-nos aos produtos que davam a cara à federação. O resto ficaria para fases seguintes, integrado um produto de cada vez.</p>
           <div class="stats">
             <div class="stat"><div class="n">4</div><div class="l">produtos no scope inicial, de mais de 40 existentes</div></div>
           </div>
         </div>
+
+        <div class="gallery cols-2 reveal">
+          <figure><div class="frame"><img src="../assets/img/fpf/scope-resultados.png" alt="Página inicial do site de resultados da FPF" loading="lazy"></div><figcaption><b>Site Resultados</b></figcaption></figure>
+          <figure><div class="frame"><img src="../assets/img/fpf/scope-bilheteira.png" alt="Página inicial da bilheteira da FPF" loading="lazy"></div><figcaption><b>Bilheteira</b></figcaption></figure>
+          <figure><div class="frame"><img src="../assets/img/fpf/scope-institucional.png" alt="Página de notícia do site institucional da FPF" loading="lazy"></div><figcaption><b>Site institucional</b></figcaption></figure>
+          <figure><div class="frame"><img src="../assets/img/fpf/scope-store.png" alt="Página inicial da Portugal Store" loading="lazy"></div><figcaption><b>Portugal Store</b></figcaption></figure>
+        </div>
       </div>
     </section>
 
-    <!-- 03 pesquisa -->
-    <section class="section">
-      <div class="wrap cs-step reveal">
-        <div class="step-label"><div class="step-num">03</div><div class="step-name">Pesquisa</div></div>
-        <div>
-          <h2>Antes de criar, inventariar</h2>
-          <p class="body">Visitámos os 4 produtos em scope e recolhemos o maior número de componentes possível, testando funcionalidades, navegação, hierarquia e estilo visual.</p>
+    <!-- 03 -->
+    <section class="step" id="pesquisa">
+      <div class="wrap">
+        <div class="read reveal">
+          <div class="kicker">03 · Pesquisa</div>
+          <h2>Inventário</h2>
+          <p>Visitámos os 4 produtos em scope e listámos o maior número possível de componentes, testando as suas funcionalidades, navegação, hierarquia e estilo visual.</p>
           <div class="stats">
             <div class="stat"><div class="n">27</div><div class="l">componentes identificados</div></div>
             <div class="stat"><div class="n">1313</div><div class="l">variáveis, entre estrutura e estados</div></div>
           </div>
-          <blockquote class="quote">
-            "O mais importante nesta fase é melhorar o que já existe, não criar coisas novas. Limpar a casa antes de comprar um móvel novo."
-          </blockquote>
+          <blockquote class="quote">O mais importante nesta fase é melhorar o que já existe, não criar coisas novas. Limpar a casa antes de comprar um móvel novo.</blockquote>
         </div>
+
+        <figure class="figure reveal">
+          <div class="frame plain"><img src="../assets/img/fpf/inventario.png" alt="Exemplos do inventário: cards de resultados e botões com estilos diferentes entre produtos" loading="lazy"></div>
+          <figcaption>Exemplos do inventário: o mesmo componente com estilos diferentes de produto para produto.</figcaption>
+        </figure>
       </div>
     </section>
 
-    <!-- 04 organização -->
-    <section class="section">
-      <div class="wrap cs-step reveal">
-        <div class="step-label"><div class="step-num">04</div><div class="step-name">Organização</div></div>
-        <div>
+    <!-- 04 -->
+    <section class="step" id="organizacao">
+      <div class="wrap">
+        <div class="read reveal">
+          <div class="kicker">04 · Organização</div>
           <h2>Documentação e biblioteca, no mesmo lugar</h2>
-          <p class="body">Tudo vive num único ficheiro Figma: a biblioteca de componentes e a documentação que ensina a usá-la. O ficheiro abre com páginas de onboarding, <b>Intro</b> e <b>Design Tokens</b>, antes de qualquer componente. Cada componente foi construído a cumprir os padrões de acessibilidade do WCAG&nbsp;2.1.</p>
-
-          <div class="grid-2">
-            <div class="panel figfile">
-              <div class="panel-title">Ficheiro Figma · Páginas</div>
-              <div class="ff-item strong">Cover</div>
-              <div class="ff-item strong">Intro</div>
-              <div class="ff-item strong">Design Tokens</div>
-              <div class="ff-item strong">Changelog</div>
-              <div class="ff-item">Badge</div>
-              <div class="ff-item">Botão</div>
-              <div class="ff-more">Checkbox, Radio button, Slider, Tags… por ordem alfabética</div>
-            </div>
-            <div class="panel">
-              <div class="panel-title">Da biblioteca aos produtos</div>
-              <div class="libflow">
-                <div class="lib-box"><b>Ficheiro Figma</b><span>Documentação + biblioteca, publicada como library.</span></div>
-                <div class="lib-arrow" aria-hidden="true">&#8594;</div>
-                <div class="lib-products"><span>Sites institucionais</span><span>Bilheteira</span><span>Loja</span></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- SCREENSHOT REAL: substituir o src quando tiveres a imagem e remover o comentário.
-          <figure class="shot">
-            <div class="frame"><img src="../assets/img/fpf/documentacao.png" alt="Página de documentação do Design System FPF no Figma" loading="lazy"></div>
-            <figcaption><b>Documentação.</b> Uma página real do ficheiro Figma.</figcaption>
-          </figure>
-          -->
+          <p>Tudo vive num único ficheiro Figma: a biblioteca de componentes e a documentação que ensina a usá-la.</p>
+          <ul class="list">
+            <li>O ficheiro abre com páginas de onboarding, <b>Intro</b> e <b>Design Tokens</b>, antes de qualquer componente.</li>
+            <li>Os componentes seguem por ordem alfabética, cada um na sua página.</li>
+            <li>Cada componente foi construído a cumprir os padrões de acessibilidade do WCAG&nbsp;2.1.</li>
+          </ul>
         </div>
+
+        <figure class="figure reveal">
+          <div class="frame"><img src="../assets/img/fpf/figma-ficheiro.png" alt="Ficheiro Figma do Design System FPF com a lista de páginas e as variantes do botão" loading="lazy"></div>
+          <figcaption>O ficheiro Design System FPF: páginas à esquerda, variantes do botão no canvas.</figcaption>
+        </figure>
       </div>
     </section>
 
-    <!-- 05 componente -->
-    <section class="section">
-      <div class="wrap cs-step reveal">
-        <div class="step-label"><div class="step-num">05</div><div class="step-name">Um componente em exemplo</div></div>
-        <div>
-          <h2>Botão: o componente e todas as suas variáveis</h2>
-          <p class="body">Cada componente tem uma página dedicada, com o componente e todas as suas variáveis, e a documentação de construção, utilização, estilo visual e variantes. O botão serve de exemplo.</p>
-
-          <div class="panel demo">
-            <div class="panel-title">Estilo visual · Rest, Hover, Pressed</div>
-            <div class="demo-row">
-              <div class="row-label">Primário</div>
-              <div class="demo-states">
-                <div class="demo-state"><small>Rest</small><button class="ds-btn primary" type="button">Texto</button></div>
-                <div class="demo-state"><small>Hover</small><span class="ds-btn primary is-hover">Texto</span></div>
-                <div class="demo-state"><small>Pressed</small><span class="ds-btn primary is-pressed">Texto</span></div>
-              </div>
-            </div>
-            <div class="demo-row">
-              <div class="row-label">Secundário</div>
-              <div class="demo-states">
-                <div class="demo-state"><small>Rest</small><button class="ds-btn secondary" type="button">Texto</button></div>
-                <div class="demo-state"><small>Hover</small><span class="ds-btn secondary is-hover">Texto</span></div>
-                <div class="demo-state"><small>Pressed</small><span class="ds-btn secondary is-pressed">Texto</span></div>
-              </div>
-            </div>
-            <div class="demo-row">
-              <div class="row-label">Destrutivo</div>
-              <div class="demo-states">
-                <div class="demo-state"><small>Rest</small><button class="ds-btn destructive" type="button">Texto</button></div>
-                <div class="demo-state"><small>Hover</small><span class="ds-btn destructive is-hover">Texto</span></div>
-                <div class="demo-state"><small>Pressed</small><span class="ds-btn destructive is-pressed">Texto</span></div>
-              </div>
-            </div>
-            <p class="demo-hint">Os botões da coluna Rest são reais: passa o rato e carrega para ver os estados.</p>
-          </div>
-
-          <div class="grid-2">
-            <div class="panel">
-              <div class="panel-title">Utilização · Hierarquia de destaque</div>
-              <div class="hier-item"><span class="badge primario">Primário</span><span>Ação principal do ecrã.</span></div>
-              <div class="hier-item"><span class="badge secundario">Secundário</span><span>Ação alternativa, menos destaque.</span></div>
-              <div class="hier-item"><span class="badge outlined">Outlined</span><span>Baixa ênfase, como "Ver tudo".</span></div>
-              <div class="hier-item"><span class="badge ghost">Ghost</span><span>Ênfase mínima, segunda opção.</span></div>
-              <div class="hier-item"><span class="badge destrutivo">Destrutivo</span><span>Ações irreversíveis, como remover.</span></div>
-            </div>
-            <div class="panel">
-              <div class="panel-title">Construção · Medidas</div>
-              <div class="spec-row"><span>Padding horizontal</span><span>16px</span></div>
-              <div class="spec-row"><span>Padding vertical</span><span>5 a 7px</span></div>
-              <div class="spec-row"><span>Corner radius</span><span>nano · 4px</span></div>
-              <div class="spec-row"><span>Tipografia</span><span>Barlow Cond. 20/28</span></div>
-              <div class="spec-row"><span>Alinhamento do texto</span><span>centrado</span></div>
-            </div>
-          </div>
-
-          <!-- SCREENSHOT REAL: substituir o src quando tiveres a imagem e remover o comentário.
-          <figure class="shot">
-            <div class="frame"><img src="../assets/img/fpf/botao-documentacao.png" alt="Página de documentação do componente Botão no Figma" loading="lazy"></div>
-            <figcaption><b>Página do Botão.</b> A documentação tal como vive no Figma.</figcaption>
-          </figure>
-          -->
+    <!-- 05 -->
+    <section class="step" id="componente">
+      <div class="wrap">
+        <div class="read reveal">
+          <div class="kicker">05 · O componente</div>
+          <h2>Componentes e todas as suas variáveis</h2>
+          <p>Cada componente tem uma página dedicada, com o componente e todas as suas variáveis, e a documentação de construção, utilização, estilo visual e variantes.</p>
         </div>
+
+        <figure class="figure reveal">
+          <div class="frame"><img src="../assets/img/fpf/documentacao-botao.png" alt="Páginas de documentação do botão: hierarquia, construção e estilo visual" loading="lazy"></div>
+          <figcaption>Documentação do botão: hierarquia, construção (anatomia, medidas, tipografia) e estilo visual por estado.</figcaption>
+        </figure>
       </div>
     </section>
 
-    <!-- 06 resultado -->
-    <section class="section">
-      <div class="wrap cs-step reveal">
-        <div class="step-label"><div class="step-num">06</div><div class="step-name">Resultado</div></div>
-        <div>
-          <h2>Um rollout que passou do scope inicial</h2>
-          <p class="body">Ao fim dos 6 meses, dentro do scope definido, a adoção foi completa em dois produtos e parcial nos outros dois. Fora do scope, o sistema chegou a cerca de 8 projetos de backoffice.</p>
+    <!-- 06 -->
+    <section class="step" id="resultado">
+      <div class="wrap">
+        <div class="read reveal">
+          <div class="kicker">06 · Resultado</div>
+          <h2>Frutos colhidos</h2>
+          <p>Ao fim dos 6 meses, dentro do scope definido, a adoção foi completa em dois produtos e parcial nos outros dois.</p>
+          <p>Fora do scope, o sistema chegou a cerca de 8 projetos de backoffice, com uma adoção de praticamente 100% na plataforma <em>Score</em>. Os novos projetos já nasceram com 100% de adoção do Design System, e as novas necessidades passaram a chegar como tickets para uma próxima fase.</p>
+        </div>
 
-          <div class="results">
-            <div class="result">
-              <h3>Adoção completa</h3>
-              <ul><li>Site institucional (fpf.pt)</li><li>Loja (portugalstore.fpf.pt)</li></ul>
-            </div>
-            <div class="result partial">
-              <h3>Adoção parcial</h3>
-              <ul><li>Os outros dois produtos do scope</li></ul>
-            </div>
-            <div class="result">
-              <h3>Fora do scope</h3>
-              <ul><li>~8 projetos de backoffice, maioria parcial</li><li>1 adoção total: a plataforma de Score</li></ul>
-            </div>
+        <div class="results reveal">
+          <div>
+            <h3>No scope</h3>
+            <ul><li>Adoção completa em 2 produtos</li><li>Adoção parcial nos outros 2</li></ul>
           </div>
+          <div>
+            <h3>Fora do scope</h3>
+            <ul><li>Cerca de 8 projetos de backoffice</li><li>Praticamente 100% na plataforma Score</li></ul>
+          </div>
+          <div>
+            <h3>Novos projetos</h3>
+            <ul><li>100% de adoção desde o início</li><li>Novas necessidades geridas como tickets</li></ul>
+          </div>
+        </div>
 
-          <div class="callout">
-            <div class="c-title">Depois</div>
-            <p>A plataforma de Score, com adoção total, gerou a maioria dos pedidos seguintes, sobretudo tabelas. Após os 6 meses, fiquei alocado à equipa da FPF durante mais um ano, a fazer manutenção do Design System.</p>
+        <figure class="figure reveal">
+          <div class="frame"><img src="../assets/img/fpf/resultado-produtos.png" alt="Ecrãs da plataforma Score, de resultados e da secção de vídeos construídos com o Design System" loading="lazy"></div>
+          <figcaption>Produtos construídos com o Design System, incluindo a plataforma Score.</figcaption>
+        </figure>
+
+        <div class="read reveal">
+          <div class="note">
+            <div class="label">Próximos passos</div>
+            <p>Após os 6 meses, fiquei alocado à equipa da FPF durante um ano, a fazer manutenção do Design System.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="wrap next-project">
-        <a class="btn-link" href="../#projetos">&#8592; Todos os projetos</a>
-        <a class="btn-link primary" href="mailto:rafaelrvaz.25@gmail.com">Falar comigo</a>
+    <section class="next">
+      <div class="wrap">
+        <a href="rrs-pingo-doce.html">
+          <div>
+            <div class="kicker">Próximo projeto</div>
+            <h2>RRS, Pingo Doce</h2>
+          </div>
+          <span class="arrow" aria-hidden="true">&#8594;</span>
+        </a>
       </div>
     </section>
   </main>
