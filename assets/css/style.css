@@ -246,3 +246,11 @@ em { font-style: italic; }
 /* fluxos: os ecrãs já trazem moldura própria */
 .gallery.flows .frame { padding: 0; background: none; }
 .gallery.flows .frame img { border: none; }
+
+/* sobre mim: foto acima da experiência */
+.about-side { display: flex; flex-direction: column; gap: 40px; }
+.portrait {
+  width: 100%; max-width: 420px; height: auto; aspect-ratio: 4 / 5; object-fit: cover;
+  border-radius: var(--radius); background: var(--panel);
+}
+@media (max-width: 880px) { .portrait { max-width: 360px; } }
